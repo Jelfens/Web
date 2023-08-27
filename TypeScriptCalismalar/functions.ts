@@ -30,4 +30,10 @@ function topla5(x: number, y?: number): number {
   return x;
 }
 
-console.log(topla5(3,40));
+console.log(topla5(3, 40));
+
+function davetEt(...digerleri: string[]) {
+  return digerleri.join(" ");
+}
+
+console.log(davetEt("Abdulkadir", "Züleyha", "Kenan", "Ayşe"))
