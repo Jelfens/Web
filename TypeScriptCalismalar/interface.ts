@@ -2,6 +2,7 @@ interface Product {
   id: number;
   name: string;
   unitPrice: number;
+
 }
 
 class Product2 {
@@ -15,10 +16,22 @@ function save(product: Product) {
 }
 
 function save2(product2: Product) {
-    console.log(product2.name + " kaydedildi.");
-  }
+  console.log(product2.name + " kaydedildi.");
+}
 
 save({ id: 1, name: "Laptop", unitPrice: 2000 });
 
-let mouse = new Product2()
-mouse.name = "Atech"
+let mouse = new Product2();
+mouse.name = "Atech";
+
+save2(mouse)
+
+interface PersonService{
+     save();
+}
+
+class CustomerService implements PersonService{
+    save() {
+        
+    }
+}
